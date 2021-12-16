@@ -11,6 +11,11 @@ Ionicons est un package d'icons web svg
 ```
 https://ionic.io/ionicons
 ```
+## FontAwesome
+FontAwesome est un package d'icons web
+```
+https://fontawesome.com/
+```
 Mettre dans le code avant la balise \</body> les scripts suivant :
 ```html
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
