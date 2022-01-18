@@ -1,0 +1,68 @@
+:root {
+    --dark-gray:  #717172;
+    --light-gray: #dadce0;
+    --light-red: #cc7272;
+    --light-blue: #1b9ce2;
+}
+
+body {
+    margin: 0;
+}
+
+#app-calendar {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    height: 100%;
+}
+
+.day, .info, .name, .hour {
+    border-bottom: 1px solid var(--dark-gray);
+    border-right: 1px solid var(--dark-gray);
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 200ms, color 200ms;
+}
+
+.info, .name {
+    background-color: var(--light-gray);
+}
+
+.hour, .info, .name {
+    padding-top: 10px;
+    height: 18px;
+}
+
+.weekend {
+    color: var(--light-blue);
+}
+
+.selected {
+    background-color: var(--light-red);
+}
+
+#app-dispo {
+    text-align:center;
+}
+
+#btnCopy {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
+    border: 2px solid var(--dark-gray);
+}
+
+#btnCopy:hover {
+    background-color: var(--dark-gray);
+    color: var(--light-gray);
+    border: 2px solid var(--light-gray);
+}
